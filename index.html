@@ -19,6 +19,7 @@
             <li><a href="#aboutme">About me</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#education">Education</a></li>
         </ul>
         </nav>
         <div class="row">
@@ -30,16 +31,16 @@
                         <img class="principal responsive" src="/images/face.jpg" alt="user face" />
                     </div>
                     <div class="box-2">
+                            <h2>Sobre mi</h2>
                             <p>
-                                Hola, mi nombre es Sebastian Al y soy desarrollador backend en Django en constante aprendizaje para poder superarme y mejorar dia a dia y aportar mis conocimientos a la empresa que me contrate.
+                                Hola, mi nombre es Sebastian Al y soy de Buenos Aires, Argentina y me desempeño como desarrollador backend en Django en constante aprendizaje para poder superarme, mejorar dia a dia y aportar mis conocimientos a la empresa que me contrate.
                                 En estos momentos estoy complementando mis estudios aprendiendo frontend y SQL
                             </p>
                     </div>
                 </div>
-                
-                
                 <div class="container">
                     <div class="box-1" id="portfolio">
+                        <h2>Portfolio</h2>
                         <p>
                             Te invito a visitar mi portfolio que es mi repositorio de Github donde se encuentran mis proyectos personales.
                             <br>
@@ -54,33 +55,109 @@
                     <div class="box-2">
                         <a href="https://github.com/Sebasto1"><img class="principal responsive" src="https://bitesizebio.com/wp-content/uploads/2020/08/Learn-Python-1024x512.jpg" alt="coding people" /></a>
                     </div>
-                </div>
+                </div><!-- Cajas que forman la seccion contacto -->
                 <div class="container">
                     <div class="box-1" id="contact">
                         <img class="principal responsive" src="https://www.programmingzeal.com/assets/img/contact-us-vector.png" alt="message me" />
                     </div>
                     <div class="box-2">
                         <p>
-                            Me pueden contactar por las siguientes vias:
+                            <h2>Me pueden contactar por las siguientes vias:</h2>
                             <br>
-                            <li><a href="https://www.linkedin.com/in/sebastian-al/"> <i class="fa-brands fa-linkedin"></i></a> Sebastian Al</li>
+                            <h3><li><a href="https://www.linkedin.com/in/sebastian-al/"> <i class="fa-brands fa-linkedin"></i></a> Sebastian Al</li>
                             <br>
                             <li><i class="fa-solid fa-envelope"></i> sebastian_al95@hotmail.com</li>
                             <br>
                             <li><a href="https://github.com/Sebasto1"><i class="fa-brands fa-square-github"></i></a> Sebasto1</li>
-
+                            <br></h3>
+                            <button class="contact"
+                                onclick="document.getElementById('contactForm').style.display='block'"
+                                style="width: auto">
+                                Contacto
+                            </button>
+                            <div id="contactForm" class="modal">
+                                <form class="modal-content animate">
+                                    <span onclick="document.getElementById('contactForm').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    
+                                    <h2 class="titulo">Envie su consulta</h2>
+                                    <!-- Formulario -->
+                                    <div class="container">
+                                        
+                                        <!-- Nombre --><label for="name"><b>Nombre</b></label>
+                                        <input
+                                        type="text"
+                                        placeholder="Ingrese su nombre"
+                                        name="name"
+                                        required/>
+                                        <!--Apellido--><label for="apellido"><b>Apellido</b></label>
+                                        <input
+                                        type="text"
+                                        placeholder="Ingrese su apellido"
+                                        name="apellido"
+                                        required/>
+                                        <label for="mensaje"><b>Mensaje</b></label>
+                                        <input
+                                        type="textarea"
+                                        placeholder="Deja aquí tu comentario..."
+                                        name="introducir_mensaje"
+                                        required/>
+                                        <!-- Boton enviar --><button type="submit" class="contact">Enviar</button>
+                                    </div>
+                                    
+                                    <div class="container" style="background-color: black;"></div>
+                                </form>
+                                
+                            </div>
                         </p>
                     </div>
                 </div>
+                <div class="container">
+                    <div class="box-2" id="education">
+                        <img class="principal responsive" src="/images/educacion.png" alt="code">
+                    </div>
+                    <div class="box-1">
+                        <h2>Educación</h2><br>
+
+                        Mi educacion esta formada por varios cursos de distintos establecimientos educativos
+                        como Coderhouse, EducacionIT, Ticmas y mucha documentacion de los distintos lenguajes.<br>
+                        Los cursos realizados hasta el momento son:<br>
+                        
+                            <ul>
+                                <h3>Python de Coderhouse</h3>
+                                <h3>Introducción a base de datos</h3>
+                                <h3>Fundamentos de programacion en SQL Server</h3>
+                                <h3>Microsoft Azure Fundamentals</h3>
+                            </ul>
+                        
+
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box-3">
+                         <!-- Carrousel -->
+                        <div class="slideshow-container">
+                                <h2>Habilidades adquiridas</h2>
+                            <!-- Imagenes -->
+                            <div class="Slides fade">
+                            <img src="/images/HTML.png" style="width:50%">
+                            </div>
+                        
+                            <div class="Slides fade">
+                            <img src="/images/SQL.png" style="width:20%">
+                            </div>
+                        
+                            <div class="Slides fade">
+                            <img src="/images/python.png" style="width:50%">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="column side">
-            </div>   
+            <div class="column side"></div>   
         </div>
 
         <button id="scroll-to-top-btn"> Ir al inicio </button>
-          
-          
-
     </body>
 
     <footer>

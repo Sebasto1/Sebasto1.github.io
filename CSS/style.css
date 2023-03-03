@@ -51,6 +51,7 @@ li a:hover {
 .column{
     float: left;
     padding: 10px;
+    font-size: large;
 }
 
 .column.side{
@@ -83,25 +84,42 @@ li a:hover {
     font-size: 1.5em;
     padding: 10px;
 }
-
+/* Caja izquierda */
 .box-1{
-    border: 1px;
+    border-bottom: 60px;
+    border-top: 40px;
+    border: 10px;
     background-color: black;
-    height: 250px;
+    height: 400px;
     width: 50%;
     padding: 10px;
     float: left;
     text-align: center;
     
 }
-
+/* Caja derecha */
 .box-2{
-    border: 1px;
+    border-bottom: 60px;
+    border-top: 40px;
+    border: 10px;
     background-color: black;
-    height: 250px;
+    height: 400px;
     width: 50%;
     padding: 10px;
     float: right;
+    
+}
+/* Caja grande que ocupa los dos lugares del centro */
+.box-3{
+    border: 1px;
+    background-color: black;
+    height: 350px;
+    width: 100%;
+    padding: 10px;
+    float: right;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
     
 }
 
@@ -112,13 +130,12 @@ img.principal{
     border: 1px;
     
 }
-
+/* Imagenes */
 .principal.responsive{
     width: auto;
     max-width: 100%;
     height: auto;
     max-height: 100%;
-
 }
 
 footer {
@@ -132,16 +149,16 @@ footer {
     bottom: 0;
     position: static;
 }
-
+/* Boton para subir */
 #scroll-to-top-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
     display: none;
-    background-color: rgb(24, 23, 23);
-    color: aliceblue;
-    
-    
+    background-color: #551a8b;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
 }
   
 /* Estilos para pantallas grandes */
@@ -205,4 +222,131 @@ footer {
         margin-top: 80px;
       }
 }
+
+/* Carrusel */
+.slideshow-container {
+    max-width: 600px;
+    max-height: 200px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
   
+  /* Esconde las imagenes */
+.Slides {
+    display: none;
+}
+
+  /* Animacion del carrusel */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+ /* Campos de datos */
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: rgb(24, 23, 23);
+  color: white;
+} 
+input[type="textarea"] {
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: rgb(24, 23, 23);
+    color: white;
+  } 
+/* Diseño de los botones del formulario */
+.contact {
+  background-color: #551a8b;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.7;
+}
+.container {
+  padding: 16px;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+} /* Estilo del formulario */
+.modal {
+  color: white;
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0; 
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: #000; 
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+} 
+
+.titulo{
+    text-align: center;
+}
+
+/* Caja del formulario */
+.modal-content {
+  background-color: black;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+ /* Animacion del formulario */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* Boton (x)*/
+.close {
+    position: relative;
+    left: 15px;
+    top: 0px;
+    
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    color: red;
+    cursor: pointer;
+}
