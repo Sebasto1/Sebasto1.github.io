@@ -13,19 +13,16 @@
     
     <script src="https://kit.fontawesome.com/461ac5c3c9.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+    <body>
         <nav class="menu">
         <ul>
-            <li><a href="#aboutme">About me</a></li>
+            <li><a href="#aboutme">Sobre mi</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#education">Educación</a></li>
         </ul>
         </nav>
-        <div class="row">
-            <div class="column side">
-            </div>   
-            <div class="column middle">   
+        <div class="grid-layout">
                 <div class="container">
                     <div class="box-1" id="aboutme">
                         <img class="principal responsive" src="/images/face.jpg" alt="user face" />
@@ -45,17 +42,19 @@
                             Te invito a visitar mi portfolio que es mi repositorio de Github donde se encuentran mis proyectos personales.
                             <br>
                             En el encontraran tanto diseños de paginas webs como aplicaciones completas donde se usan distintos lenguajes y frameworks
+                            <ul>
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>Python</li>
                             <li>Django</li>
                             <li>SQL</li>
+                            </ul>
                         </p>
                     </div>
                     <div class="box-2">
-                        <a href="https://github.com/Sebasto1"><img class="principal responsive" src="https://bitesizebio.com/wp-content/uploads/2020/08/Learn-Python-1024x512.jpg" alt="coding people" /></a>
+                        <a href="https://github.com/Sebasto1"><img class="principal responsive" src="https://ckeditor.com/blog/is-coding-for-everyone/feature.png" alt="coding people" /></a>
                     </div>
-                </div><!-- Cajas que forman la seccion contacto -->
+                </div><!-- Cajas contacto -->
                 <div class="container">
                     <div class="box-1" id="contact">
                         <img class="principal responsive" src="https://www.programmingzeal.com/assets/img/contact-us-vector.png" alt="message me" />
@@ -128,12 +127,10 @@
                                 <h3>Fundamentos de programacion en SQL Server</h3>
                                 <h3>Microsoft Azure Fundamentals</h3>
                             </ul>
-                        
-
                     </div>
                 </div>
-                <div class="container">
-                    <div class="box-3">
+                
+                    <div class="box-3 carrusel">
                          <!-- Carrousel -->
                         <div class="slideshow-container">
                                 <h2>Habilidades adquiridas</h2>
@@ -152,9 +149,9 @@
                         </div>
 
                     </div>
-                </div>
-            </div>
-            <div class="column side"></div>   
+                
+            
+            
         </div>
 
         <button id="scroll-to-top-btn"> Ir al inicio </button>
